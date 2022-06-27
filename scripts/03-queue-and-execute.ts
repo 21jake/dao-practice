@@ -9,7 +9,6 @@ import { moveTime, moveBlocks } from "../utils";
 export async function queueAndExecute(hre: HardhatRuntimeEnvironment) {
 
     const {developmentTeam} = await hre.getNamedAccounts();
-    // const developmentTeam = "0xbB16550010cA6e7648A065a3DA7ccff39CEfcAC5";
   const args : [string, BigNumberish]= [developmentTeam, AMOUNT] 
   const governanceToken: GovernanceToken  = await ethers.getContract("GovernanceToken");
 

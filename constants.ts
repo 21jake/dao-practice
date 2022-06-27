@@ -35,4 +35,4 @@ export const ADDRESS_ZERO = "0x0000000000000000000000000000000000000000"
 // Inputs to be encoded
 export const AMOUNT = tokenAmountBN(100);
 export const FUNC = "mint"
-export const PROPOSAL_DESCRIPTION = `Very`
+export const PROPOSAL_DESCRIPTION = "Mint 1_000 tokens for the development team"

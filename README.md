@@ -2,11 +2,11 @@
 
 Here is the rundown of what the test suite does. 
 
-1. Deploy an ERC20 token to govern the DAO.
+1. Deploy a mintable ERC20 token to govern the DAO.
 2. Deploy a Timelock contract to give a buffer between executing proposals (The timelock is the contract that will handle all the money, ownerships, etc)
 3. Deploy the Governence contract (The Governance contract is in charge of proposals and such, but the Timelock executes)
-4. Deploy a simple Box contract, which will be owned by the governance process(aka, timelock contract).
-5. Propose a new value to be added to the Box contract.
+4. Set up the token contract so as the minting will be done through governance process (MINTER will be assigned to Timelock contract address).
+5. Propose a new amount to be minted to a specific address.
 6. Vote on that proposal.
 7. Queue the proposal to be executed.
 8. Execute the proposal.
@@ -19,7 +19,7 @@ You can do it all manually on your own local network:
 yarn hardhat node
 ```
 
-2. Open a new terminal, propose a new value to be added to the Box contract
+2. Open a new terminal, propose a new value to be minted to a specific address
 
 ```
 yarn hardhat run scripts/propose.ts --network localhost
