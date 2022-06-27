@@ -37,4 +37,4 @@ yarn hardhat run scripts/vote.ts --network localhost
 yarn hardhat run scripts/queue-and-execute.ts --network localhost
 ```
 
-
+Greatly appreciate the guidance from [PatrickAlphaC](https://github.com/PatrickAlphaC)
