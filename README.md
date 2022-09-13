@@ -1,4 +1,4 @@
-### On-Chain Governance Example
+### On-Chain Governance Boilerplate
 
 Here is the rundown of what the test suite does. 
 
